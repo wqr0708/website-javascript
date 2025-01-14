@@ -1,13 +1,18 @@
-// variable = A container that stores data values.
-//            Behaves as if it were the value it contains.
+//arithmetic operators = operands (values, variables, etc.)
+                        //  operators (+ - * /)
+                        //  ex. 11 = x + 5
 
-// 1.decalaration   let x;
-// 2. initialization  x = 100;
+let students = 30;
 
-let fullName = "Bro Code";
-let age = 23;
-let student = true;
+// students = students - 1;
+// students = students * 2;
+// students = students / 2;
+// students = students ** 2;
+// students = students % 2;
 
-document.getElementById("p1").textContent = `Your name is ${fullName}`;
-document.getElementById("p2").textContent = `You are ${age} years old`;
-document.getElementById("p3").textContent = `Enrolled: ${student}`;
+// students += 1;
+// students *= 2;
+
+// students++;
+
+console.log(students);
