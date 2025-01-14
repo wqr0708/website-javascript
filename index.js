@@ -1,18 +1,27 @@
-let x = 3.61;
-let y = 2;
-let z = 1;
+// const MAX = 100;
+// const MIN = 20;
 
-// z = Math.round(x);
-// z = Math.floor(x);
-// z = Math.ceil(x);
-// z = Math.trunc(x);
-// z = Math.pow(x, y);
-// z = Math.sin(x);
-// z = Math.sqrt(x);
-// z = Math.log(x);
-// z = Math.tan(x);
-// z = Math.abs(x);
-let max = Math.max(x, y, z)
-let min = Math.min(x, y, z)
+// let randomNum = Math.floor(Math.random() * (MAX - MIN)) + MIN;
 
-console.log(max);
+// console.log(randomNum);
+
+const myButton = document.getElementById("myButton");
+const label1 = document.getElementById("myLabel1");
+const label2 = document.getElementById("myLabel2");
+const label3 = document.getElementById("myLabel3");
+
+const min = 1;
+const max = 6;
+
+let randomNum1;
+let randomNum2;
+let randomNum3;
+
+myButton.onclick = function(){
+    randomNum1 = Math.floor(Math.random() * (max - min) + min);
+    randomNum2 = Math.floor(Math.random() * (max - min) + min);
+    randomNum3 = Math.floor(Math.random() * (max - min) + min);
+    myLabel1.textContent = randomNum1;
+    myLabel2.textContent = randomNum2;
+    myLabel3.textContent = randomNum3;
+}
