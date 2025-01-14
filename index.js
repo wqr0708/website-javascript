@@ -1,18 +1,18 @@
-//arithmetic operators = operands (values, variables, etc.)
-                        //  operators (+ - * /)
-                        //  ex. 11 = x + 5
+//How to accept user input
 
-let students = 30;
+//1. Easy way = window prompt
+//2. PROFESSIONAL way = HTML textbox
 
-// students = students - 1;
-// students = students * 2;
-// students = students / 2;
-// students = students ** 2;
-// students = students % 2;
+// let username;
 
-// students += 1;
-// students *= 2;
+// username = window.prompt("What is your username?");
 
-// students++;
+// console.log(username);
 
-console.log(students);
+let username;
+
+document.getElementById("mySubmit").onclick = function(){
+    username = document.getElementById("myText").value;
+    document.getElementById("myH1").textContent = `Hello ${username}`;
+    console.log(username);
+}
