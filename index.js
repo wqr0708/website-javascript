@@ -1,22 +1,20 @@
-// const = a variable that can't be changed
+const decreastBtn = document.getElementById("decreaseBtn");
+const resetBtn = document.getElementById("resetBtn");
+const increastBtn = document.getElementById("increaseBtn");
+const countLabel = document.getElementById("countLabel");
+let count = 0;
 
-// let PI = 3.14159;
-const PI = 3.14159;
-let radius;
-let circumference;
+increastBtn.onclick = function(){
+    count++;
+    countLabel.textContent = count;
+}
 
-// PI = 420.489;
+resetBtn.onclick = function(){
+    count = 0;
+    countLabel.textContent = count;
+}
 
-// radius = window.prompt("Enter the radius of the circle");
-// radius = Number(radius);
-
-circumference = 2 * PI * radius;
-
-console.log(circumference);
-
-document.getElementById("mySubmit").onclick = function(){
-    radius = document.getElementById("myText").value;
-    radius = Number(radius);
-    circumference = 2 * PI * radius;
-    document.getElementById("myH3").textContent = circumference + "cm"
+decreastBtn.onclick = function(){
+    count--;
+    countLabel.textContent = count;
 }
