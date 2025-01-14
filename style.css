@@ -1,0 +1,4 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em; /* 如果没有父元素，px 是相对于浏览器窗口的默认字体大小 */
+}
