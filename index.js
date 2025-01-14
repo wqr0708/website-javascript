@@ -1,17 +1,29 @@
-// console.log("Hello");
-// console.log("I like pizza!")
+// variable = A container that stores data values.
+//            Behaves as if it were the value it contains.
 
-// window.alert("This is an alert!");
-// window.alert("I like pizza!");
+// 1.decalaration   let x;
+// 2. initialization  x = 100;
 
-document.getElementById("myH1").textContent = "Hello";
-document.getElementById("myP").textContent = "I like pizza!"
+// let x;
+// x = 100;
 
-//This is a comment.
+// console.log(x);
+// console.log(y);
 
-/*
-    This
-    is
-    a
-    comment
-*/
+let age = 25;
+let price = 10.99;
+let gpa = 2.1;
+
+let firstName = "Bro";
+
+let online = true;
+
+console.log(typeof age);
+console.log(`You are ${age} years old.`);
+console.log(`The price is $${price}`);
+console.log(`Your gpa is ${gpa}`);
+
+console.log(typeof firstName);
+console.log(`Your name is ${firstName}`);
+
+console.log(`Bro is online: ${online}`);
